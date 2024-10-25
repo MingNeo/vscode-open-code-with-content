@@ -2,11 +2,11 @@
   "name": "vscode-open-code-with-content",
   "displayName": "open-code-with-content",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "MingNeo",
   "publisher": "MingNeo",
   "engines": {
-    "vscode": "^1.94.0"
+    "vscode": "^1.92.0"
   },
   "categories": [
     "Other"
@@ -21,13 +21,14 @@
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
+    "build": "npm run compile && vsce package",
     "watch": "tsc -watch -p ./",
     "pretest": "pnpm run compile && pnpm run lint",
     "lint": "eslint src --ext ts",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.94.0",
+    "@types/vscode": "^1.92.0",
     "@types/mocha": "^10.0.6",
     "@types/node": "20.x",
     "@typescript-eslint/eslint-plugin": "^7.11.0",
