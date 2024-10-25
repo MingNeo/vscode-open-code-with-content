@@ -1,5 +1,5 @@
 {
-  "name": "open-code-with-content",
+  "name": "vscode-open-code-with-content",
   "displayName": "open-code-with-content",
   "description": "",
   "version": "0.0.1",
@@ -17,7 +17,7 @@
     "url": "git@github.com:MingNeo/vscode-open-code-with-content.git"
   },
   "main": "./out/extension.js",
-  "activationEvents": [],
+  "activationEvents": ["onUri"],
   "scripts": {
     "vscode:prepublish": "pnpm run compile",
     "compile": "tsc -p ./",
